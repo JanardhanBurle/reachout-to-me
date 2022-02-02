@@ -19,8 +19,6 @@ router.post('/', asyncHandler(async(req, res) => {
         error
     } = validateRequest(request);
     if (error) return res.status(400).send(error.details[0].message);
-
-
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         service: "gmail",
@@ -35,24 +33,32 @@ router.post('/', asyncHandler(async(req, res) => {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: `Consultation janardhan9701@gmail.com`, // sender address
-        sender: 'test.janardhan@gmail.com', // sender address
-        to: "janardhan9701@gmail.com", // list of receivers
-        subject: "Hello ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: "<b>Hello world?</b>", // html body
+        sender: 'My Portfolio: ${request.fullName}', // sender address
+        to: `officemail.janardhan@gmail.com`, // list of receivers
+        subject: `Message from ${request.fullName}`, // Subject line
+        html: `Hi there,<br>
+        You just received a meesage from Portfolio application. 
+        <p>${request.fullName} / ${request.email} </p><br>
+        <p>${request.message} </p>
+        `, // html body
     });
-
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-
-
-
-    res.send('Success');
+    if (info.messageId) {
+        // send mail with defined transport object
+        await transporter.sendMail({
+            from: `Janardhanarao Burle <officemail.janardhan@gmail.com>`, // sender address
+            sender: 'officemail.janardhan@gmail.com', // sender address
+            to: `${request.email}`, // list of receivers
+            subject: "Message from Janardhan", // Subject line
+            text: ``, // plain text body
+            html: `Dear <b> ${request.fullName}</b>,<br>
+    <p>Thanks for your interest in my profile.</p>
+    <p>I'll get back to you as soon as possible :)
+    <br><br><br>
+    <p>Kind Regards,<br>Janardhanarao Burle</p>
+    `, // html body
+        });
+    }
+    res.status(200).send('Success');
 }));
 
 
