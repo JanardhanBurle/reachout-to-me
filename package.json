@@ -10,6 +10,9 @@
         "type": "git",
         "url": "git+https://github.com/JanardhanBurle/reachout-to-me.git"
     },
+    "engines": {
+        "node": "16.x"
+    },
     "keywords": [
         "Node",
         "Mailer",
