@@ -1,11 +1,16 @@
 const Joi = require('joi');
 const express = require('express');
 const router = express.Router();
+const path = require('path');
 const {
     validateRequest
 } = require('../models/mail');
 const asyncHandler = require('../middleware/asyncHandler');
 const nodemailer = require("nodemailer");
+
+router.get('/', asyncHandler(async(req, res) => {
+    res.sendFile(path.join(__dirname + '/mail.html'));
+}));
 
 router.post('/', asyncHandler(async(req, res) => {
     let request = req.body;
@@ -15,7 +20,6 @@ router.post('/', asyncHandler(async(req, res) => {
     } = validateRequest(request);
     if (error) return res.status(400).send(error.details[0].message);
 
-    let testAccount = await nodemailer.createTestAccount();
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
