@@ -43,3 +43,16 @@
 {"level":"info","message":"Listening to port 3000..."}
 {"level":"info","message":"Listening to port 3000..."}
 {"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"error","message":"res.sendStatus(...).body is not a function res.sendStatus(...).body is not a function","stack":"TypeError: res.sendStatus(...).body is not a function\n    at /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/routes/mail.js:61:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/middleware/asyncHandler.js:4:13"}
+{"level":"error","message":"res.sendStatus(...).body is not a function res.sendStatus(...).body is not a function","stack":"TypeError: res.sendStatus(...).body is not a function\n    at /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/routes/mail.js:61:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/middleware/asyncHandler.js:4:13"}
+{"level":"error","message":"res.sendStatus(...).body is not a function res.sendStatus(...).body is not a function","stack":"TypeError: res.sendStatus(...).body is not a function\n    at /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/routes/mail.js:61:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/middleware/asyncHandler.js:4:13"}
+{"level":"error","message":"res.sendStatus(...).body is not a function res.sendStatus(...).body is not a function","stack":"TypeError: res.sendStatus(...).body is not a function\n    at /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/routes/mail.js:61:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/middleware/asyncHandler.js:4:13"}
+{"level":"error","message":"res.sendStatus(...).body is not a function res.sendStatus(...).body is not a function","stack":"TypeError: res.sendStatus(...).body is not a function\n    at /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/routes/mail.js:61:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async /Users/janardhanaraoburle/Personal/Projects/reachout-to-me/middleware/asyncHandler.js:4:13"}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
