@@ -57,8 +57,12 @@ router.post('/', asyncHandler(async(req, res) => {
     <p>Kind Regards,<br>Janardhanarao Burle</p>
     `, // html body
         });
+        res.send(JSON.stringify({
+            status: 200,
+            message: 'success',
+            data: {}
+        }));
     }
-    res.status(200).send('Success');
 }));
 
 
