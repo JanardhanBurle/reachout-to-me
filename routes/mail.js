@@ -27,7 +27,7 @@ router.post('/', asyncHandler(async(req, res) => {
         secure: true, // true for 465, false for other ports
         auth: {
             user: 'officemail.janardhan@gmail.com', // generated ethereal user
-            pass: 'htzmxswupfutyyop', // generated ethereal password
+            pass: 'swqgftnolujvkgbs', // generated ethereal password
         },
     });
 
