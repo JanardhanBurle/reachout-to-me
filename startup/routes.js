@@ -1,7 +1,7 @@
 const express = require('express');
 const mail = require('../routes/mail');
 const error = require('../middleware/error');
-
+const cors = require('cors');
 const corsOpts = {
     origin: '*',
 
