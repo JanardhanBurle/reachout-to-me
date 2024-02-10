@@ -26,6 +26,7 @@
     "homepage": "https://github.com/JanardhanBurle/reachout-to-me#readme",
     "dependencies": {
         "body-parser": "^1.19.1",
+        "cors": "^2.8.5",
         "express": "^4.17.2",
         "fawn": "^2.1.5",
         "firebase": "^9.6.5",
