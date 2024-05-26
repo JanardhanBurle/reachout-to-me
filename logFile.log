@@ -58,3 +58,8 @@
 {"level":"info","message":"Listening to port 3000..."}
 {"level":"info","message":"Listening to port 3000..."}
 {"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"level":"info","message":"Listening to port 3000..."}
+{"code":"EDNS","command":"CONN","errno":-3008,"hostname":"mtp.titan.email","level":"error","message":"getaddrinfo ENOTFOUND mtp.titan.email getaddrinfo ENOTFOUND mtp.titan.email","stack":"Error: getaddrinfo ENOTFOUND mtp.titan.email\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)","syscall":"getaddrinfo"}
+{"level":"info","message":"Listening to port 3000..."}

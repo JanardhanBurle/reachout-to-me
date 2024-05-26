@@ -1,5 +1,6 @@
 const express = require('express');
 const mail = require('../routes/mail');
+const cybergoat = require('../routes/cybergoat');
 const error = require('../middleware/error');
 const cors = require('cors');
 const corsOpts = {
@@ -21,5 +22,6 @@ module.exports = function (app) {
 
     app.use(express.json());
     app.use('/api/mail', mail);
+    app.use('/api/cybergoat', cybergoat);
     app.use(error);
 }
